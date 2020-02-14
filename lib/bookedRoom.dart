@@ -23,9 +23,8 @@ class BookedRoom extends StatelessWidget {
     return new Scaffold(
       appBar: new AppBar(
         backgroundColor: Colors.lightBlueAccent,
-        title: Center(
-          child: Text('Rooms'),
-        ),
+        centerTitle: true,
+        title: Text('Live Rooms Booked'),
         actions: <Widget>[
 //          new Icon(Icons.search)
         ],

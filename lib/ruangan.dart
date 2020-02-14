@@ -48,10 +48,8 @@ class HalamanRuangan extends StatelessWidget {
       appBar: new AppBar(
         backgroundColor: Colors.lightBlueAccent,
 //        leading: new Icon(Icons.home),
-        // title: new Center(child: new Text("Ruangan"),),
-        title: Center(
-          child: Text('Rooms'),
-        ),
+        centerTitle: true,
+        title: Text('Rooms'),
         actions: <Widget>[
 //          new Icon(Icons.search)
         ],

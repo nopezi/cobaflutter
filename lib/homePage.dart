@@ -1,10 +1,13 @@
 import 'package:carousel_slider/carousel_slider.dart';
+import 'package:cobaflutter/content/meetingRule.dart';
+import 'package:cobaflutter/content/tutorial.dart';
 import 'package:flutter/material.dart';
 import './ruangan.dart';
 // import './cariBooking.dart';
 import './rowHalamanHome.dart';
 import './bookedRoom.dart';
 import 'content/booking.dart';
+import 'content/meetingRule.dart';
 // void main() => runApp(MyApp());
 
 void main() {
@@ -115,7 +118,7 @@ class _HomePageState extends State<HomePage> {
                 ),
               ),
               new Container(
-                child: BookedRoom(),
+                child: MeetingRule(),
               ),
               new Container(
                 child: HalamanRuangan(),
@@ -177,7 +180,7 @@ class Utama extends StatelessWidget {
                     title: Center(
                       child: new GestureDetector(
                         onTap: () => Navigator.of(context).push(new MaterialPageRoute(
-                            builder: (BuildContext context) => new HalamanRuangan()
+                            builder: (BuildContext context) => new Booking()
                         )),
                         child: Column(
                           children: <Widget>[
@@ -215,7 +218,7 @@ class Utama extends StatelessWidget {
                     title: Center(
                       child: new GestureDetector(
                         onTap: () => Navigator.of(context).push(new MaterialPageRoute(
-                            builder: (BuildContext context) => new HalamanRuangan()
+                            builder: (BuildContext context) => new BookedRoom()
                         )),
                         child: Column(
                           children: <Widget>[
@@ -294,7 +297,7 @@ class Utama extends StatelessWidget {
                     title: Center(
                       child: new GestureDetector(
                         onTap: () => Navigator.of(context).push(new MaterialPageRoute(
-                            builder: (BuildContext context) => new HalamanRuangan()
+                            builder: (BuildContext context) => new Tutorial()
                         )),
                         child: Column(
                           children: <Widget>[
